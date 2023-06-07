@@ -3,19 +3,19 @@ import React from 'react';
 function Featured() {
   return (
     <div>
-      <section className="dark:bg-gray-800 dark:text-gray-100">
-        <div className="container flex flex-col-reverse justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+      <section className="">
+        <div className="container flex flex-col-reverse justify-center p-6 mx-auto  xs:py-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
   <div class="-m-1 flex flex-wrap md:-m-2">
     <div class="flex w-1/3 flex-wrap">
       <div class="w-full p-1 md:p-2">
         <img
           alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
+          class="block h-full w-full rounded-lg object-cover object-center xs:w-110%"
           src="src\assets\FeaturedRamen.png" />
       </div>
     </div>
-    <div class="flex w-1/3 flex-wrap">
+    <div class="flex w-1/3 flex-wrap ">
       <div class="w-full p-1 md:p-2">
         <img
           alt="gallery"
@@ -58,8 +58,7 @@ function Featured() {
   </div>
 </div>
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="font-Mono text-5xl font-bold leading-none sm:text-6xl"><h2 className="text-5xl font-bold">Introducing our featured<span className="text-[#C4DE39]"> Japanese </span>dishes of the week!</h2>
-            </h1>
+            <h1 className="text-4xl font-Mono font-bold leading-none md:text-5xl lg:text-6xl">Introducing our featured<span className="text-[#C4DE39]"> Japanese </span>dishes of the week!</h1>
           </div>
         </div>
       </section>

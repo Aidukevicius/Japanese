@@ -4,10 +4,10 @@ import HeroImage from '../assets/Hero.png'
 function Hero() {
   return (
     <div>
-      <section className="dark:bg-black dark:text-gray-100">
-      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 xl:py-24 2xl:py-0 lg:flex-row">
-		    <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="text-5xl font-Mono font-bold leading-none sm:text-6xl">
+      <section>
+      <div className="container flex flex-col justify-center m-auto !xs:py-0 sm:py-12 lg:py-24 xl:py-24 2xl:py-0 lg:flex-row">
+		    <div className="flex flex-col justify-center p-0 text-center rounded-sm mt-20 lg:mt-0 lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 className="text-4xl font-Mono font-bold leading-none md:text-5xl lg:text-6xl">
             Unlock the Art of  <span className="text-[#C4DE39]">Japanese</span> Cuisine: Savor the Flavors, Master the Techniques!
             </h1>
             
@@ -26,14 +26,15 @@ function Hero() {
                 <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
                 </a>
                 </a>
+                
              
             </div>
           </div>
-          <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-[30rem]  xl:h-[35rem]  2xl:h-[40rem]">
+          <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 md:h-[25rem] lg:h-[30rem]  xl:h-[35rem]  2xl:h-[40rem]">
             <img
               src={HeroImage} 
               alt=""
-              className="object-contain h-72 sm:h-80 lg:h-[30rem] xl:ml-10 xl:h-[35rem] 2xl:h-[40rem]"
+              className="object-contain h-72 2xl:visible md:h-[25rem] lg:h-[30rem] xl:ml-10 xl:h-[35rem] 2xl:h-[40rem]"
             />
           </div>
         </div>

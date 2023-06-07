@@ -4,6 +4,7 @@ import Hero from './componnents/Hero'
 import Featured from './componnents/Featured'
 import Divider from './Reusable/Divider'
 import Caregories from './componnents/Categories'
+import Footer from './componnents/Footer'
 import '../src/index.css';
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Featured />
       <Divider />
       <Caregories />
+      <Footer />
 
     </div>
   )

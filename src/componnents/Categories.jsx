@@ -1,30 +1,12 @@
-import { Carousel } from "@material-tailwind/react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-} from "@heroicons/react/24/solid";
+import { Carousel,IconButton,} from "@material-tailwind/react";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline"
 
-
-export default function CarouselCardExample() {
+export default function Example() {
   return (
-   
-   <div >
-    <h1 className="text-center p-8 font-Mono text-5xl font-bold leading-none sm:text-6xl">
-      Deliciously Diverse: Unveiling the Flavors of <span className="text-[#C4DE39]"> Japan </span>
-    </h1>
     <Carousel
       className="rounded-xl"
       navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-1 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
@@ -42,9 +24,9 @@ export default function CarouselCardExample() {
           color="black"
           size="lg"
           onClick={handlePrev}
-          className="!absolute top-2/4 -translate-y-2/4 left-4 ml-60"
+          className="!absolute top-2/4 -translate-y-2/4 left-10  xl:left-42 "
         >
-          <ArrowLeftIcon strokeWidth={2} className="w-6 h-6" color='black' />
+          <ArrowLeftIcon strokeWidth={2} className="w-6 h-6" color="black" />
         </IconButton>
       )}
       nextArrow={({ handleNext }) => (
@@ -53,275 +35,127 @@ export default function CarouselCardExample() {
           color="black"
           size="lg"
           onClick={handleNext}
-          className="!absolute top-2/4 -translate-y-2/4 !right-4 mr-60"
+          className="!absolute top-2/4 -translate-y-2/4 right-10 xl:right-42 "
         >
-          <ArrowRightIcon strokeWidth={2} className="w-6 h-6" color="black"/>
+          <ArrowRightIcon strokeWidth={2} className="w-6 h-6" color="black" />
         </IconButton>
       )}
+      
     >
+      <section className="">
+      <div className="container flex flex-col items-center justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-center">
+        <div className="flex m-auto flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 className="text-5xl font-Mono font-bold leading-none sm:text-6xl">
+              Ramen
+            </h1>
+            <p className="mt-6 mb-8 text-lg font-Noto font-black sm:mb-12">
+            Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
+            </p>
+            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a
+                rel="Explore Recipes"
+                href="#"
+                className=""
+              >
+                <a href="#_" class="relative inline-block text-lg group">
+                <span class="font-Noto relative z-10 block px-5 py-3 overflow-hidden font-bold leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black">
+                <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#C4DE39] group-hover:-rotate-180 ease"></span>
+                <span class="relative">Explore Recipes</span>
+                </span>
+                <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+                </a>
+                </a>
+             
+            </div>
+          </div>
+          <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <img
+              src="src/assets/CategoryRamen.png"
+              alt=""
+              className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="">
+      <div className="container flex flex-col items-center justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-center">
+        <div className="flex m-auto flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 className="text-5xl font-Mono font-bold leading-none sm:text-6xl">
+              Ramen
+            </h1>
+            <p className="mt-6 mb-8 text-lg font-Noto font-black sm:mb-12">
+            Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
+            </p>
+            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a
+                rel="Explore Recipes"
+                href="#"
+                className=""
+              >
+                <a href="#_" class="relative inline-block text-lg group">
+                <span class="font-Noto relative z-10 block px-5 py-3 overflow-hidden font-bold leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black">
+                <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#C4DE39] group-hover:-rotate-180 ease"></span>
+                <span class="relative">Explore Recipes</span>
+                </span>
+                <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+                </a>
+                </a>
+             
+            </div>
+          </div>
+          <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <img
+              src="src/assets/CategoryRamen.png"
+              alt=""
+              className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="">
+      <div className="container flex flex-col items-center justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-center">
+        <div className="flex m-auto flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 className="text-5xl font-Mono font-bold leading-none sm:text-6xl">
+              Ramen
+            </h1>
+            <p className="mt-6 mb-8 text-lg font-Noto font-black sm:mb-12">
+            Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
+            </p>
+            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a
+                rel="Explore Recipes"
+                href="#"
+                className=""
+              >
+                <a href="#_" class="relative inline-block text-lg group">
+                <span class="font-Noto relative z-10 block px-5 py-3 overflow-hidden font-bold leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black">
+                <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#C4DE39] group-hover:-rotate-180 ease"></span>
+                <span class="relative">Explore Recipes</span>
+                </span>
+                <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+                </a>
+                </a>
+             
+            </div>
+          </div>
+          <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <img
+              src="src/assets/CategoryRamen.png"
+              alt=""
+              className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            />
+          </div>
+        </div>
+      </section>
+
       
-    
-      <div className="flex flex-col justify-center items-center space-x-4 xs:flex-wrap lg:flex-row">
 
-      <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-00">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-
-    <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-
-    <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-      </div>
-
-      <div className="flex justify-center items-center space-x-4 xs:flex-wrap">
-      
-      <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-
-    <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-
-    <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-      </div>
-
-      <div className="flex justify-center items-center space-x-4 xs:flex-wrap">
-      
-      <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-
-    <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-
-    <Card className="w-full max-w-[26rem] xs:w-auto shadow-lg border-2">
-      <CardHeader floated={false} color="blue-gray">
-        <img
-          src="src/assets/CategoryRamen.png"
-          alt="Ramen"
-        />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-      </CardHeader>
-      <CardBody>
-        <div className="mb-3 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray" className="font-medium font-Mono">
-            Ramen
-          </Typography>
-        </div>
-        <Typography color="gray" className='font-Noto'>
-        Japanese ramen: Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
-        </Typography>
-        <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-        
-        </div>
-      </CardBody>
-      <CardFooter className="pt-3">
-        <Button size="lg" fullWidth={true} className="bg-[#C4DE39] hover:shadow-black-100">
-        Explore Recipes
-        </Button>
-      </CardFooter>
-    </Card>
-      </div>
+       
     </Carousel>
-    </div>
   );
 }

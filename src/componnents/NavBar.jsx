@@ -86,7 +86,7 @@ export default function Example() {
  
   return (
     <>
-      <Navbar className={`bg-opacity-100 blur-none sticky outline-none border-none shadow-none inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 ${scrolled ? 'bg-black' : ''}`}>
+      <Navbar className={`bg-opacity-100 blur-none sticky outline-none border-none shadow-none inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 ${scrolled ? 'bg-[#DB8B42]' : ''}`}>
         <div className="flex items-center justify-between text-blue-gray-900 lg:mr-20">
           <Typography
             as="a"
