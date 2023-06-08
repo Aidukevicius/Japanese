@@ -1,5 +1,6 @@
 import { Carousel,IconButton,} from "@material-tailwind/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline"
+import CategoryRamen from '../assets/CategoryRamen.png'
 
 export default function Example() {
   return (
@@ -71,7 +72,7 @@ export default function Example() {
           </div>
           <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
-              src="src/assets/CategoryRamen.png"
+              src={CategoryRamen}
               alt=""
               className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
@@ -108,7 +109,7 @@ export default function Example() {
           </div>
           <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
-              src="src/assets/CategoryRamen.png"
+              src={CategoryRamen}
               alt=""
               className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
@@ -145,7 +146,7 @@ export default function Example() {
           </div>
           <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
-              src="src/assets/CategoryRamen.png"
+              src={CategoryRamen}
               alt=""
               className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
