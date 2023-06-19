@@ -15,6 +15,8 @@ import {
     FireIcon,
   } from "@heroicons/react/24/solid";
    import CLickGohan from '../assets/CLickGohan.png'
+
+   
   export default function Example() {
     return (
       <div className="fixed mt-20 inset-0 flex items-center justify-center z-10"
