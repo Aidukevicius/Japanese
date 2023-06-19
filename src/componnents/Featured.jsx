@@ -6,6 +6,13 @@ import ClickKatsudon from '../Click/ClickKatsudon';
 import ClickSoba from '../Click/ClickSoba';
 import ClickTempura from '../Click/ClickTempura'
 
+import FeaturedBento from '../assets/FeaturedBento.png'
+import FeaturedGohan from '../assets/FeaturedGohan.png'
+import FeaturedKatsudon from '../assets/FeaturedKatsudon.png'
+import FeaturedRamen from '../assets/FeaturedRamen.png'
+import FeaturedSoba from '../assets/FeaturedSoba.png'
+import FeaturedTempura from '../assets/FeaturedTempura.png'
+
 function Featured() {
   const [showClickRamen, setShowClickRamen] = useState(false);
   const [showClickBento, setShowClickBento] = useState(false);
@@ -82,7 +89,7 @@ function Featured() {
                     alt="gallery"
                     style={imageStyle}
                     className="block h-full w-full object-cover object-center xs:w-110% lg:w-100% cursor-pointer"
-                    src="src\assets\FeaturedRamen.png"
+                    src={FeaturedRamen}
                     onClick={handleImageClickRamen}
                     onMouseEnter={handleImageMouseEnter}
                     onMouseLeave={handleImageMouseLeave}
@@ -96,7 +103,7 @@ function Featured() {
                     alt="gallery"
                     style={imageStyle}
                     className="block h-full w-full rounded-lg object-cover object-center cursor-pointer"
-                    src="src\assets\FeaturedBento.png"
+                    src={FeaturedBento}
                     onClick={handleImageClickBento}
                     onMouseEnter={handleImageMouseEnter}
                     onMouseLeave={handleImageMouseLeave}
@@ -110,7 +117,7 @@ function Featured() {
                     alt="gallery"
                     style={imageStyle}
                     className="block h-full w-full rounded-lg object-cover object-center cursor-pointer"
-                    src="src\assets\FeaturedGohan.png"
+                    src={FeaturedGohan}
                     onClick={handleImageClickGohan}
                     onMouseEnter={handleImageMouseEnter}
                     onMouseLeave={handleImageMouseLeave}
@@ -124,7 +131,7 @@ function Featured() {
                     alt="gallery"
                     style={imageStyle}
                     className="block h-full w-full rounded-lg object-cover object-center cursor-pointer"
-                    src="src\assets\FeaturedKatsudon.png"
+                    src={FeaturedKatsudon}
                     onClick={handleImageClickKatsudon}
                     onMouseEnter={handleImageMouseEnter}
                     onMouseLeave={handleImageMouseLeave}
@@ -138,7 +145,7 @@ function Featured() {
                     alt="gallery"
                     style={imageStyle}
                     className="block h-full w-full rounded-lg object-cover object-center cursor-pointer"
-                    src="src\assets\FeaturedSoba.png"
+                    src={FeaturedSoba}
                     onClick={handleImageClickSoba}
                     onMouseEnter={handleImageMouseEnter}
                     onMouseLeave={handleImageMouseLeave}
@@ -153,7 +160,7 @@ function Featured() {
                     alt="gallery"
                     style={imageStyle}
                     className="block h-full w-full rounded-lg object-cover object-center cursor-pointer"
-                    src="src\assets\FeaturedTempura.png"
+                    src={FeaturedSoba}
                     onClick={handleImageClickTempura}
                     onMouseEnter={handleImageMouseEnter}
                     onMouseLeave={handleImageMouseLeave}
