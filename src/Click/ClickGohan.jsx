@@ -14,8 +14,8 @@ import {
     HandRaisedIcon,
     FireIcon,
   } from "@heroicons/react/24/solid";
-  
-   import CLickGohan from '../assets/CLickGohan.png';
+
+   import ClickGohan from '../assets/ClickGohan.png';
 
 
   export default function Example() {
@@ -26,7 +26,7 @@ import {
       <Card className="w-full justify-center m-auto max-w-[40rem] shadow-lg bg-white border-4 border-black">
         <CardHeader floated={false} color="blue-gray">
           <img
-            src={CLickGohan}
+            src={ClickGohan}
             alt="ui/ux review check"
           />
           <div className="absolute inset-0 h-full w-full " />
