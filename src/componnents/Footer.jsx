@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from '../assets/Logo.png'
 
 
 function Footer() {
@@ -9,7 +10,7 @@ function Footer() {
 		<div className="grid grid-cols-12">
 			<div className="pb-6 col-span-full md:pb-0 md:col-span-6">
 				<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 md:justify-start">
-					<span className="self-center text-2xl font-semibold"><img src='src/assets/Logo.png'  className="w-auto max-h-24" /></span>
+					<span className="self-center text-2xl font-semibold"><img src={Logo}  className="w-auto max-h-24" /></span>
 				</a>
 			</div>
 		</div>
