@@ -34,6 +34,7 @@ module.exports = withMT({
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"),require('@tailwindcss/forms'),],
+  
 });
 

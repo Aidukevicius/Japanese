@@ -1,22 +1,22 @@
 import React from 'react'
 import NavBar from './componnents/NavBar'
-import Hero from './componnents/Hero'
-import Featured from './componnents/Featured'
-import Divider from './Reusable/Divider'
-import Caregories from './componnents/Categories'
-import Footer from './componnents/Footer'
+import AboutPage from './pages/AboutPage'
+import RecipesPage from './pages/RecipesPage'
+import HomePage from './pages/HomePage'
 import '../src/index.css';
+import HovereRamen from './Click/ClickRamen'
+
+
+import { Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <div>
       <NavBar />
-      <Hero />
-      <Divider />
-      <Featured />
-      <Divider />
-      <Caregories />
-      <Footer />
-
+      <Routes>
+        <Route path='/' element={<HomePage/>} />
+        <Route path='about' element={<AboutPage/>}/>
+        <Route path='recipes' element={<RecipesPage/>}/>
+      </Routes>
     </div>
   )
 }

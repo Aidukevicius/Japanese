@@ -1,13 +1,15 @@
 import { Carousel,IconButton,} from "@material-tailwind/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline"
 import CategoryRamen from '../assets/CategoryRamen.png'
+import CategoryBento from '../assets/CategoryBento.png'
+import CategorySushi from '../assets/CategorySushi.png'
 
 export default function Example() {
   return (
     <Carousel
       className="rounded-xl"
       navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+        <div className="absolute bottom-4 left-2/4 z-10 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
@@ -73,7 +75,7 @@ export default function Example() {
           <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
               src={CategoryRamen}
-              alt=""
+              alt="Ramen"
               className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
           </div>
@@ -84,10 +86,10 @@ export default function Example() {
       <div className="container flex flex-col items-center justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-center">
         <div className="flex m-auto flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className="text-5xl font-Mono font-bold leading-none sm:text-6xl">
-              Ramen
+              Bento Box
             </h1>
             <p className="mt-6 mb-8 text-lg font-Noto font-black sm:mb-12">
-            Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
+            A convenient and balanced meal, featuring a variety of flavorful dishes beautifully arranged in a compact container.
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a
@@ -109,8 +111,8 @@ export default function Example() {
           </div>
           <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
-              src={CategoryRamen}
-              alt=""
+              src={CategoryBento}
+              alt="Bento Box"
               className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
           </div>
@@ -121,10 +123,10 @@ export default function Example() {
       <div className="container flex flex-col items-center justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-center">
         <div className="flex m-auto flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className="text-5xl font-Mono font-bold leading-none sm:text-6xl">
-              Ramen
+              Sushi
             </h1>
             <p className="mt-6 mb-8 text-lg font-Noto font-black sm:mb-12">
-            Flavorful broth, chewy noodles, and tasty toppings create a comforting and beloved dish enjoyed worldwide.
+            Seasoned rice, fresh fish, delicate flavors, elegant presentation, a harmonious blend of taste and texture.
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a
@@ -146,8 +148,8 @@ export default function Example() {
           </div>
           <div className="m-auto flex items-center justify-center p-6 mt-8  lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
-              src={CategoryRamen}
-              alt=""
+              src={CategorySushi}
+              alt="Sushi"
               className="object-contain m-auto h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
           </div>

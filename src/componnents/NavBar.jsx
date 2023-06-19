@@ -38,11 +38,11 @@ export default function Example() {
   }, []);
  
   const navList = (
-    <ul id="navbar-links" className="text-green mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+    <ul id="navbar-links" className="text-green mb-4  mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <li>
       <Typography
         as="a"
-        href="#"
+        href="/"
         variant="small"
         className="p-1 font-normal font-Mono text-3xl"
         style={{
@@ -57,7 +57,7 @@ export default function Example() {
       <li>
       <Typography
         as="a"
-        href="#"
+        href="/about"
         variant="small"
         className="p-1 font-normal font-Mono text-3xl"
         style={{ color: scrolled ? 'white' : 'black' }}
@@ -70,7 +70,7 @@ export default function Example() {
     <li>
       <Typography
         as="a"
-        href="#"
+        href="/recipes"
         variant="small"
         className="p-1 font-normal font-Mono text-3xl"
         style={{ color: scrolled ? 'white' : 'black' }}
@@ -86,26 +86,35 @@ export default function Example() {
  
   return (
     <>
-      <Navbar className={`bg-opacity-100 blur-none sticky outline-none border-none shadow-none inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 ${scrolled ? 'bg-[#DB8B42]' : ''}`}>
+      <Navbar className={`z-20 bg-opacity-100 blur-none sticky py-0 outline-none border-none shadow-none inset-0  h-max max-w-full rounded-none  px-4 lg:px-8  ${scrolled ? 'bg-[#2c2c2c]' : ''}`}>
         <div className="flex items-center justify-between text-blue-gray-900 lg:mr-20">
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
+            className="mr-4 cursor-pointer pt-1.5 font-medium"
           >
             <img src={Logo} className="w-auto max-h-24 lg:ml-20" />
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
             <Input
-              className={`!bg-[#C4DE39] lg:w-[18rem] ${scrolled ? 'text-black' : 'text-black'}`}
-              label={<label style={{ color: 'black', fontWeight: '1000', }}>Search</label>}
-              icon={<i className="fa-sharp fa-solid fa-magnifying-glass" style={{ color: 'black' }} />}
-              color='black'
+              className={`!bg-[#C4DE39] lg:w-[18rem]`}
+              label={
+                <label
+                  style={{
+                    color: scrolled ? 'white' : 'black',
+                    fontWeight: '1000',
+                  }}
+                >
+                  Search
+                </label>
+              }
+              icon={<i className="fa-sharp fa-solid fa-magnifying-glass" style={{ color: scrolled ? 'white' : 'black' }} />}
+              color={scrolled ? 'white' : 'black'}
             />
             <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className=" ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden ${scrolled ? 'bg-[#2c2c2c]' : 'white'}`}"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
@@ -117,6 +126,7 @@ export default function Example() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}
+                  color={scrolled ? 'white' : 'black'}
                 >
                   <path
                     strokeLinecap="round"
@@ -131,6 +141,7 @@ export default function Example() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={2}
+                  color={scrolled ? 'white' : 'black'}
                 >
                   <path
                     strokeLinecap="round"
