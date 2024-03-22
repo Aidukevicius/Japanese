@@ -160,7 +160,7 @@ function Featured() {
                     alt="gallery"
                     style={imageStyle}
                     className="block h-full w-full rounded-lg object-cover object-center cursor-pointer"
-                    src={FeaturedSoba}
+                    src={FeaturedTempura}
                     onClick={handleImageClickTempura}
                     onMouseEnter={handleImageMouseEnter}
                     onMouseLeave={handleImageMouseLeave}
